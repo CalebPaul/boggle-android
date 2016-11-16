@@ -26,46 +26,51 @@
         android:id="@+id/scrambleTextView"
         android:layout_centerHorizontal="true"
         android:textSize="35sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:background="@color/textBackground" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
         android:id="@+id/wordListView"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:background="@color/textBackground"
+        android:layout_below="@+id/scrambleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/inputField"
-        android:layout_above="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:hint="Enter Your Word"
+        android:layout_above="@+id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:background="@android:color/white" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Submit Word"
         android:id="@+id/submitButton"
-        android:layout_alignParentBottom="true"
         android:textColor="@color/primary_text"
         android:background="@color/primary_light"
-        android:layout_toLeftOf="@+id/inputField"
-        android:layout_toStartOf="@+id/inputField" />
+        android:width="150dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toLeftOf="@+id/wordListView"
+        android:layout_toStartOf="@+id/wordListView" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Refresh"
         android:id="@+id/refreshButton"
-        android:layout_alignParentBottom="true"
         android:textColor="@color/primary_text"
         android:background="@color/accent"
-        android:layout_alignTop="@+id/submitButton"
-        android:layout_toRightOf="@+id/submitButton"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:width="150dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toRightOf="@+id/wordListView"
+        android:layout_toEndOf="@+id/wordListView" />
 
 </RelativeLayout>
