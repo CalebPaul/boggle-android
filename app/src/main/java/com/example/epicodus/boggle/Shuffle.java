@@ -8,8 +8,8 @@ public class Shuffle {
     public static void main(String[] args) {
         Shuffle s = new Shuffle();
         s.shuffle("hello");
-
     }
+
     public void shuffle(String input){
         List<Character> characters = new ArrayList<Character>();
         for(char c:input.toCharArray()){
@@ -20,7 +20,7 @@ public class Shuffle {
             int randPicker = (int)(Math.random()*characters.size());
             output.append(characters.remove(randPicker));
         }
-        System.out.println(output.toString());
+     System.out.println(output.toString());
     }
 
 }

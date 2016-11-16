@@ -24,10 +24,12 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/scrambleTextView"
-        android:layout_centerHorizontal="true"
         android:textSize="35sp"
         android:textStyle="bold"
-        android:background="@color/textBackground" />
+        android:background="@color/textBackground"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,8 +60,8 @@
         android:background="@color/primary_light"
         android:width="150dp"
         android:layout_alignBottom="@+id/imageView"
-        android:layout_toLeftOf="@+id/wordListView"
-        android:layout_toStartOf="@+id/wordListView" />
+        android:layout_toStartOf="@+id/inputField"
+        android:layout_toLeftOf="@+id/inputField" />
 
     <Button
         android:layout_width="match_parent"
@@ -70,7 +72,26 @@
         android:background="@color/accent"
         android:width="150dp"
         android:layout_alignBottom="@+id/imageView"
-        android:layout_toRightOf="@+id/wordListView"
-        android:layout_toEndOf="@+id/wordListView" />
+        android:layout_toEndOf="@+id/inputField"
+        android:layout_toRightOf="@+id/inputField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your Letters"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shuffle"
+        android:id="@+id/shuffleButton"
+        android:layout_alignTop="@+id/scrambleTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
